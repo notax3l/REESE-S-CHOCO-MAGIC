@@ -1,0 +1,330 @@
+/* BASIC BODY STYLING */
+body {
+    /* BASIC SIZING  */
+    margin: 0;
+    padding: 0;
+    /* ADDING 2 CUSTOM FONTS  */
+    font-family: 'Luckiest Guy', sans-serif;
+    color: #4A2C2A; /* REESES BROWN COLOR  */
+    background-color: #FFF7E1; /* CREAM COLOR MATCHING REESES BRAND IDENTITY*/
+}
+
+/* HEADER STYLING */
+header {
+    background: black;
+    color: #FFF7E1;
+    /*ADDING A CUSTOM BOX SHADOW TO MAKE IT LOOK BETTER  */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* USING STICKY POSITION */
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+/* MAKING THE HEADER DIV A FLEX CONTAINER  */
+.header_div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*STYLING THE MAIN BRAND LOGO  */
+#logo {
+    height: 110px;
+    padding-left: 35px;
+}
+
+/*CUSTOMIZING THE NAV LINKS AND LISTS  */
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav ul li {
+    margin: 0 20px;
+}
+
+.nav ul li a {
+    color: #FFF7E1;
+    text-decoration: none;
+    font-size: 28px;
+    font-family: 'Chewy', cursive;
+    font-weight: bold;
+    transition: all 0.5s ease;
+}
+
+.nav ul li a:hover {
+    color: #FDB347;
+    text-shadow: 0 0 10px #FF7900; 
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* MAIN INDEX PAGE BANNER STYLING */
+#indexbanner {
+    /* GIVING AS CUSTOM HEIGHT OF 90 VH */
+    height: 90vh;
+    background: linear-gradient(to right, black 60%, transparent 60%),
+    url("img/reesesmainwp.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 80px;
+    flex-direction: column;
+    margin-bottom: 0;
+
+}
+
+/* PRODUCT SECTION STYLING  */
+/*STYLING THE PRODUCT DIV  */
+.threeproductdiv {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/*STYLING THE PRODUCT BLOCK  */
+.productblock {
+    padding: 2rem;
+    border-radius: 20px;
+    text-align: center;
+    transition: all 0.3s;
+    position: relative;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    /* GIVING IT A CUSTOM FONT  */
+    font-family: 'Chewy', cursive;
+    font-size: 20px;
+}
+
+/* HOVER ACTION FOR THE BLOCK */
+.productblock:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(255, 165, 0, 0.5);
+}
+
+/* STYLING THE IMAGE DIV */
+.productimagediv {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+/* STYLING THE PRODUCT PICTURE */
+.productimage {
+    width: 300px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+/* MAIN BANNER STYLING */
+#indexbanner h1 { /* STYLING THE BANNER MAIN HEADING */
+    color: #FF7900;     font-size: 150px;
+    font-family: 'Luckiest Guy', sans-serif; /*USING CUSTOM FONT */
+    font-weight: bolder;
+    letter-spacing: 2px;
+    text-shadow: 3px 3px 0 #4A2C2A;
+    /*GIVING IT A SMOOTH TRANSFORMATION  */
+    transition: transform 0.5s ease, color 0.5s ease, letter-spacing 0.5s ease, text-shadow 0.5s ease;
+    margin: 0;
+}
+
+/* HOVER EFFECT FOR THE BANNER HEADING */
+#indexbanner h1:hover {
+    color: #FDB347;
+    transform: scale(1.1) rotate(-2deg);
+    letter-spacing: 8px;
+    text-shadow: 5px 5px 0 #4A2C2A;
+}
+
+/*STYLING THE H2  */
+#indexbanner h2 {
+    color: #4A2C2A;
+    font-size: 70px;
+    margin: 0;
+    text-shadow: 2px 2px 0 #FF7900;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* HOVER EFFECT FOR THE SECOND HEADING */
+#indexbanner h2:hover {
+    color: #FF7900;
+    text-shadow: 2px 2px 0 #4A2C2A;
+}
+
+/*STYLING THE GLOW BUTTON  */
+.glow-button {
+    background: #FF7900;
+    color: #FFF7E1;
+    border: 2px solid #4A2C2A;
+    padding: 20px 40px;
+    font-size: 18px;
+    /* CURSOR CHANGES TO POINTER */
+    cursor: pointer;
+    border-radius: 10px;
+    /* CUSTOM FONT */
+    font-family: 'Anton', sans-serif;
+    font-weight: bold;
+    /* TRANSITION */
+    transition: all 0.3s ease;
+    /*CUSTOM STYLING BOX SHADOW  */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/*HOVER EFFECT FOR THE GLOW BUTTON  */
+.glow-button:hover {
+    background-color: #FDB347;
+    box-shadow: 0 0 15px 3px #FF7900;
+    transform: scale(1.1);
+}
+
+/* STORY SECTION STYLING  */
+
+.reesestory {
+    /* MAKING IT A FLEX CONTAINER  */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #4A2C2A;
+    text-align: center;
+    height: auto;
+    padding: 40px 20px;
+}
+
+.reesestory h1 {
+    font-size: 3rem;
+    color: #FF7900;
+    margin-bottom: 30px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* STYLING THE IMAGE */
+.storyimage img {
+    height: 400px;
+    width: auto;
+    /*MAKING IT ROUND USING THE BORDER RADIUS  */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* STYLING THE PARAGRAPH TAG */
+.reesestory p {
+    font-family: 'Chewy', cursive;
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #FFF7E1;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* FOOTER STYLING */
+.footer {
+    /* GIVING IT THE SIGNATURE REESES BROWN COLOR */
+    background-color: #4A2C2A;
+    color: #FFF7E1;
+    padding-bottom: 20px;
+    text-align: center;
+    font-family: 'Georgia', serif;
+}
+
+/* STYLING THE FOOTERDIV */
+.footerdiv {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+/* STYLING THE UNORDERED LIST */
+.footerconnects ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footerconnects ul li {
+    margin-bottom: 10px;
+}
+
+.footerconnects ul li a {
+    color: #FFF7E1;
+    text-decoration: none;
+    font-size: 32px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.footerconnects ul li a:hover {
+    color: #FF7900;
+    text-shadow: 0 0 10px #FF7900;
+    font-size: 19.2px;
+    transform: translateY(-2px);
+}
+
+/* STYLING THE CONTACT FORM IN THE FOOTER  */
+.footerformdiv form {
+    /*MAKING IT A FLEX CONNTAINER  */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footerformdiv input
+ {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #FF7900;
+    border-radius: 5px;
+    background-color: #FFF7E1;
+    color: #4A2C2A;
+    transition: all 0.3s ease;
+}
+
+/* WHEN THE INPUT AREA IS FOCUSED I.E ACTIVE IN SIMPLE WORDS */
+.footerformdiv input:focus,
+.footerformdiv textarea:focus {
+    border-color: #FDB347; /* CHANGING THE COLOR */
+    outline: none;
+}
+
+/* STYLING THE CUSTOM SUBMIT BUTTON  */
+.footerformdiv .submitbutton {
+    background-color: #FF7900;
+    color: #FFF7E1;
+    border: none;
+    padding: 12px 20px;
+    font-size: 19.2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.footerformdiv .submitbutton:hover {
+    background-color: #FDB347;
+    box-shadow: 0 0 15px 3px #FF7900;
+    transform: scale(1.1);/* INCREASING THE SCALE*/
+}
+
+/* STYLING THE ENDING PART OF THE FOOTER  */
+.footerend {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #FFF7E1;
+}
+
+
+.stylebar {
+    height: 20px;
+    background: linear-gradient(to right, #FDB347, #FF7900);
+}
+

@@ -1,0 +1,99 @@
+<!-- SUBMISSION BY TANISHQ PRATAP SINGH ( 200587638) -->
+<!DOCTYPE html>
+<html lang="en">
+<head id="meta">
+    <title>REESE'S CHOCOWORLD</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Luckiest+Guy&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<!-- ADDING THE UNIVERSAL HEADER THAT CAN BE USED IN MULTIPLE PAGES  -->
+<header id="header"></header>
+
+<section class="stylebar"></section> <!-- FOR BASIC STYLING , JUST A NORMAL BAR  -->
+
+<main>
+
+    <section id="indexbanner"> <!-- MAIN BANNER FOR THE HOME PAGE -->
+        <h2> "PEANUT BUTTER" </h2>
+        <h1> REESE'S </h1>
+        <h2> "THE MAGIC COMBO" </h2>
+        <button class="glow-button">SHOP NOW</button> <!-- GLOWING BUTTON  -->
+    </section>
+
+    <section class="stylebar"></section> <!--FOR STYLING  -->
+
+    <!-- SECTION THAT CONTAINS ALL THE REESES PRODUCTS , OTHER THAN THE ORIGINAL CUPS -->
+    <section class="productsection" id="products">
+        <!-- TOTAL 3 PRODUCTS TO BE SHOWCASED IN THE HOME PAGE -->
+        <div class="threeproductdiv">
+
+            <div class="productblock">
+                <div class="productimagediv"> <!-- CONTAINS THE PRODUCT IMAGE -->
+                    <div class="productimage" style="background-image: url('img/reesesoriginal.png');"></div>
+                </div>
+                <h3>Original Cups</h3>
+                <p>The classic combination that started it all</p>
+            </div>
+
+            <div class="productblock">
+                <div class="productimagediv">
+                    <div class="productimage" style="background-image: url('img/reesespieces.png');"></div>
+                </div>
+                <h3>Reese's Pieces</h3>
+                <p>Bite-sized candies filled with peanut butter</p>
+            </div>
+
+            <div class="productblock">
+                <div class="productimagediv">
+                    <div class="productimage" style="background-image: url('img/reesesbigcups.png');"></div>
+                </div>
+                <h3>Big Cup</h3>
+                <p>More of what you love in every bite</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="stylebar"></section> <!--for styling -->
+
+    <section class="reesestory"> <!-- A SECTION THAT CONTAINS THE STORY OF REESES BRAND  -->
+
+        <h1> THE <span class="mainword">"REESE'S"</span>  STORY </h1> <!-- HEADING OF THE STORY SECTION  -->
+
+        <div class="storyimage"> <!-- IMAGE CONTAINING A RANDOM REESES PHOTO -->
+            <img src="img/reeseslegacy.jpg" alt="legacyphoto">
+        </div>
+
+        <p>
+            Reese's Peanut Butter Cups have been an American favorite since their invention in 1928
+            by H.B. Reese, a former dairy farmer. Combining the creamy, nutty richness of peanut butter
+            with the smooth sweetness of milk chocolate, Reese's created a flavor harmony that has
+            captivated taste buds for generations. With their iconic orange packaging and perfect balance
+            of salty and sweet, Reese's has become a cultural phenomenon, inspiring countless variations
+            and recipes. From holiday-themed treats to the classic cup, Reese's continues to be a symbol
+            of comfort, indulgence, and joy for chocolate and peanut butter lovers worldwide.
+        </p>
+    </section>
+
+</main>
+
+<section class="stylebar"></section>
+
+<!-- ADDING THE UNIVERSAL FOOTER INTO THE HOME PAGE.-->
+
+<div id="footer"></div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="scripts.js"></script>
+
+<script>
+
+    document.querySelector('.glow-button').addEventListener('click', function() {
+        window.location.href = 'shop.html';
+    });
+</script>
+
+</body>
+</html>
